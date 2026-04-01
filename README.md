@@ -39,3 +39,7 @@ python generate_shark.py
 ## Contributor notes
 - Keep the macOS fallback path free of xformers hard requirements
 - If you update model loading, verify `facebook/musicgen-small` still generates locally
+
+## Security note
+
+GitHub Dependabot may flag the pinned PyTorch version in this port. The repo keeps a tested, Apple Silicon-friendly stack so generation continues to work locally. If you upgrade Torch for security reasons, re-test the patched Audiocraft fork and generation path before publishing a change.
