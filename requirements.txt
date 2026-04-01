@@ -1,6 +1,6 @@
 # Apple Silicon-friendly baseline for the port
 numpy==1.26.4
-torch==2.5.1
+torch==2.8.0
 torchaudio==2.5.1
 soundfile
 einops
