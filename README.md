@@ -22,3 +22,9 @@ python generate_shark.py
 - This port patches Audiocraft to avoid xformers on Darwin.
 - `shark_cue.wav` is generated locally at 32 kHz mono.
 - For community sharing, keep the vendored fork and this patch set together.
+
+## What changed
+- Patched Audiocraft for macOS / Apple Silicon
+- Removed xformers runtime path on Darwin
+- Added a lightweight shark-cue generator script
+- Pinned a working dependency set for local generation
