@@ -1,5 +1,12 @@
 # MusicGen macOS Port
 
+
+## Status
+
+[![macOS](https://img.shields.io/badge/macOS-Apple%20Silicon-brightgreen)](https://github.com/salvitas/musicgen-macos-port)
+[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
+[![Torch](https://img.shields.io/badge/PyTorch-2.5.1-ee4c2c)](https://pytorch.org/)
+
 Apple Silicon-friendly local MusicGen setup built from a patched Audiocraft fork.
 
 ## What works
@@ -28,3 +35,7 @@ python generate_shark.py
 - Removed xformers runtime path on Darwin
 - Added a lightweight shark-cue generator script
 - Pinned a working dependency set for local generation
+
+## Contributor notes
+- Keep the macOS fallback path free of xformers hard requirements
+- If you update model loading, verify `facebook/musicgen-small` still generates locally
